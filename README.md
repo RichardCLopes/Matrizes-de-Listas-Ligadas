@@ -62,7 +62,7 @@ parte da saída ou dos comandos.
   </tr>
   <tr>
     <td>Saída</td>
-    <td>a<sub>1,1</sub> ... a<sub>1,m</sub><br>... //Separados por espaço (com formato %4.2f)<br>a<sub>n,1</sub> ... a<sub>n,m</sub><br>ERRO //Caso a matriz não exista </td>
+    <td>a<sub>1,1</sub> ... a<sub>1,m</sub><br>... //Separados por espaço (com formato %4.2f)<br>a<sub>n,1</sub> ... a<sub>n,m</sub><br>ERRO //Caso a matriz não exista</td>
   </tr>
 </table>
 
@@ -74,7 +74,7 @@ parte da saída ou dos comandos.
   </tr>
   <tr>
     <td>Saída</td>
-    <td>OK //Em caso de sucesso<br>ERRO //Caso a matriz não exista ou as coordenadas sejam inválidas </td>
+    <td>OK //Em caso de sucesso<br>ERRO //Caso a matriz não exista ou as coordenadas sejam inválidas</td>
   </tr>
 </table>
 
@@ -98,7 +98,7 @@ parte da saída ou dos comandos.
   </tr>
   <tr>
     <td>Saída</td>
-    <td>OK //Em caso de sucesso<br>ERRO //Caso a matriz não exista, a coluna seja inválida ou a quantidade de valores não seja condizente com as dimensões da matriz </td>
+    <td>OK //Em caso de sucesso<br>ERRO //Caso a matriz não exista, a coluna seja inválida ou a quantidade de valores não seja condizente com as dimensões da matriz</td>
   </tr>
 </table>
 
@@ -110,6 +110,66 @@ parte da saída ou dos comandos.
   </tr>
   <tr>
     <td>Saída</td>
-    <td>/Imprime a matriz resultante (mesmo formato do comando IM)<br>ERRO //Caso a matriz não exista ou a matriz resultante já exista </td>
+    <td>//Imprime a matriz resultante (mesmo formato do comando IM)<br>ERRO //Caso a matriz não exista ou a matriz resultante já exista</td>
+  </tr>
+</table>
+
+### Somar duas matrizes   
+<table>
+  <tr>
+    <td>Comando</td>
+    <td>SM &ltnome1&gt &ltnome2&gt &ltnome-resultado sem espaços&gt</td>
+  </tr>
+  <tr>
+    <td>Saída</td>
+    <td>//Imprime matriz resultante (mesmo formato do comando IM)<br>ERRO //Caso alguma das matrizes não exista, suas dimensões não sejam as mesmas ou a matriz resultante já exista</td>
+  </tr>
+</table>
+
+### Dividir uma matriz por outra (elemento a elemento)   
+<table>
+  <tr>
+    <td>Comando</td>
+    <td>DV &ltnome1&gt &ltnome2&gt &ltnome-resultado sem espaços&gt</td>
+  </tr>
+  <tr>
+    <td>Saída</td>
+    <td>//Imprime matriz resultante (mesmo formato do comando IM)<br>ERRO //Caso alguma das matrizes não exista, suas dimensões não sejam as mesmas, a segunda matriz contenha algum elemento igual a 0 ou a matriz resultante já exista</td>
+  </tr>
+</table>
+
+### Multiplicar uma matriz por outra   
+<table>
+  <tr>
+    <td>Comando</td>
+    <td>MM &ltnome1&gt &ltnome2&gt &ltnome-resultado sem espaços&gt</td>
+  </tr>
+  <tr>
+    <td>Saída</td>
+    <td>//Imprime matriz resultante (mesmo formato do comando IM)<br>ERRO //Caso alguma das matrizes não exista, suas dimensões estejam incorretas ou a matriz resultante já exista</td>
+  </tr>
+</table>
+
+### Multiplicar uma matriz por outra (elemento a elemento)   
+<table>
+  <tr>
+    <td>Comando</td>
+    <td>ME &ltnome1&gt &ltnome2&gt &ltnome-resultado sem espaços&gt</td>
+  </tr>
+  <tr>
+    <td>Saída</td>
+    <td>//Imprime matriz resultante (mesmo formato do comando IM)<br>ERRO //Caso alguma das matrizes não exista, suas dimensões não sejam as mesmas ou a matriz resultante já exista</td>
+  </tr>
+</table>
+
+### Finaliza a execução  
+<table>
+  <tr>
+    <td>Comando</td>
+    <td>FE</td>
+  </tr>
+  <tr>
+    <td>Saída</td>
+    <td>//Finaliza a execução do programa</td>
   </tr>
 </table>
