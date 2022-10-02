@@ -66,14 +66,50 @@ parte da saída ou dos comandos.
   </tr>
 </table>
 
-### Destruir matriz  
+### Atribuir um elemento à matriz 
 <table>
   <tr>
     <td>Comando</td>
-    <td>DM &ltnome&gt </td>
+    <td>AE &ltnome&gt &ltlinha&gt &ltcoluna&gt &ltvalor&gt</td>
   </tr>
   <tr>
     <td>Saída</td>
-    <td>OK //Em caso de sucesso <br>ERRO //Caso a matriz não exista</td>
+    <td>OK //Em caso de sucesso<br>ERRO //Caso a matriz não exista ou as coordenadas sejam inválidas </td>
+  </tr>
+</table>
+
+### Atribuir uma linha à matriz
+<table>
+  <tr>
+    <td>Comando</td>
+    <td>AL &ltnome&gt &ltlinha&gt &ltval1&gt ... &ltval<sub>n</sub>&gt #</td>
+  </tr>
+  <tr>
+    <td>Saída</td>
+    <td>OK //Em caso de sucesso<br>ERRO //Caso a matriz não exista, a linha seja inválida ou a quantidade de valores não seja condizente com as dimensões da matriz</td>
+  </tr>
+</table>
+
+### Atribuir uma coluna à matriz 
+<table>
+  <tr>
+    <td>Comando</td>
+    <td>AC &ltnome&gt &ltcoluna&gt &ltval1&gt ... &ltval<sub>m</sub>&gt #</td>
+  </tr>
+  <tr>
+    <td>Saída</td>
+    <td>OK //Em caso de sucesso<br>ERRO //Caso a matriz não exista, a coluna seja inválida ou a quantidade de valores não seja condizente com as dimensões da matriz </td>
+  </tr>
+</table>
+
+### Transpor uma matriz  
+<table>
+  <tr>
+    <td>Comando</td>
+    <td>TM &ltnome&gt &ltnome-resultado sem espaços&gt</td>
+  </tr>
+  <tr>
+    <td>Saída</td>
+    <td>/Imprime a matriz resultante (mesmo formato do comando IM)<br>ERRO //Caso a matriz não exista ou a matriz resultante já exista </td>
   </tr>
 </table>
